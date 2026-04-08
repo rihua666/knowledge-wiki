@@ -21,20 +21,20 @@ updated: 2026-04-08
 ### 两个常见失败模式
 
 1. **上下文焦虑**：模型接近上下文限制时过早结束工作
-   - Compaction（压缩）不够：仍保留旧上下文，焦虑可能持续
+   - Compaction（压缩）不够：仍保留旧上下文，焦虑可能持续。详见 [[有效上下文工程 (Effective Context Engineering)]] 中的 Compaction 分析
    - **Context Reset（重置）**更好：清空上下文，用结构化工件传递状态
 
 2. **自我评价偏差**：Agent 评价自己作品时过于宽容
    - 即使有可验证结果的任务也存在判断力差的问题
-   - 解决：**将生成者与评估者分离**
+   - 解决：**将生成者与评估者分离**。评估方法论见 [[Survey on Evaluation of LLM-based Agents]]
 
 ### 三代理架构
 
 受 GAN 启发，设计 Planner-Generator-Evaluator 架构：
 
-- **Planner**：将产品规格分解为任务列表
+- **Planner**：将产品规格分解为任务列表（类似 [[智能体设计模式]] 中的 Prompt Chaining）
 - **Generator**：实现任务，构建应用
-- **Evaluator**：根据评分标准评估输出，提供反馈
+- **Evaluator**：根据评分标准评估输出，提供反馈（工具评估方法见 [[Writing effective tools for agents]]）
 
 ### 前端设计的四项评分标准
 

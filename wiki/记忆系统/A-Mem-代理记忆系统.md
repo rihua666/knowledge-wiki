@@ -15,7 +15,9 @@ updated: 2026-04-08
 
 ### 问题
 
-现有 LLM Agent 记忆系统（MemGPT、Mem0、MemoryBank 等）依赖预定义的结构和固定工作流，缺乏灵活性和适应性，难以处理复杂开放任务。
+现有 LLM Agent 记忆系统（MemGPT、Mem0、MemoryBank 等）依赖预定义的结构和固定工作流，缺乏灵活性和适应性，难以处理复杂开放任务。更多背景见 [[Memory in the Age of AI Agents: A Survey]] 中的记忆分类框架。
+
+### 核心创新：三大机制
 
 ### 核心创新：三大机制
 
@@ -28,7 +30,7 @@ updated: 2026-04-08
   - `context` — LLM 生成的上下文描述（核心！）
   - `embedding` — 文本编码器的向量表示
   - `links` — 关联记忆集合
-- 遵循 Zettelkasten 的**原子性原则**：每条笔记捕获一个自包含的知识单元
+- 遵循 Zettelkasten 的**原子性原则**：每条笔记捕获一个自包含的知识单元。这种结构化笔记的理念与 [[AI代理的上下文工程-Manus经验]] 中文件系统作为外部记忆的实践形成互补。
 
 #### 2. Link Generation（链接生成）
 - 新记忆加入时，通过 embedding 相似度检索 top-k 相关历史记忆
