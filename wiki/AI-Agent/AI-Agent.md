@@ -1,4 +1,5 @@
 ---
+type: hub
 title: AI-Agent
 category: AI-Agent
 tags: agent, architecture, harness, multi-agent, tool-use, design-patterns
