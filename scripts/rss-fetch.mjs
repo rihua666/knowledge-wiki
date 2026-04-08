@@ -9,6 +9,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs'
 import { dirname, join } from 'path'
 import { fileURLToPath } from 'url'
+import { execSync } from 'child_process'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const WORKSPACE = join(__dirname, '..')
@@ -118,9 +119,26 @@ async function main() {
   const dryRun = args.includes('--dry-run')
   const fetchAll = args.includes('--all')
   const daysArg = args.find(a => a.startsWith('--days='))
-  const maxDays = daysArg ? parseInt(daysArg.split('=')[1]) : 30 // 默认只拉最近 30 天
+  const maxDays = daysArg ? parseInt(daysArg.split('=')[1]) : 30
   const maxItemsArg = args.find(a => a.startsWith('--max='))
-  const maxItems = maxItemsArg ? parseInt(maxItemsArg.split('=')[1]) : 20 // 每个源最多拉 20 篇
+  const maxItems = maxItemsArg ? parseInt(maxItemsArg.split('=')[1]) : 20
+  const proxyArg = args.find(a => a.startsWith('--proxy='))
+  
+  // 读取代理配置：命令行 > feeds.yaml > 环境变量
+  let proxy = proxyArg ? proxyArg.split('=')[1] : ''
+  if (!proxy && existsSync(FEEDS_FILE)) {
+    const yamlContent = readFileSync(FEEDS_FILE, 'utf8')
+    const proxyMatch = yamlContent.match(/^proxy:\s*(.+)$/m)
+    if (proxyMatch) proxy = proxyMatch[1].trim()
+  }
+  if (!proxy) proxy = process.env.HTTPS_PROXY || process.env.HTTP_PROXY || process.env.ALL_PROXY || ''
+  
+  if (proxy) {
+ console.log(`🌐 使用代理: ${proxy}\n`)
+    // 通过环境变量设置代理（node fetch 会自动使用）
+    process.env.HTTP_PROXY = proxy
+    process.env.HTTPS_PROXY = proxy
+  }
 
   // 读取 feeds 配置
   if (!existsSync(FEEDS_FILE)) {
@@ -129,6 +147,9 @@ async function main() {
     console.error(`
 # RSS 订阅源配置
 # 运行: node scripts/rss-fetch.mjs [--dry-run] [--days=30] [--max=20]
+#
+# 代理配置（留空则不使用代理）
+proxy: http://127.0.0.1:7890
 #
 # --days=N    只拉最近 N 天的文章（默认 30）
 # --max=N     每个源最多拉 N 篇（默认 20）
@@ -154,19 +175,27 @@ async function main() {
     console.log(`━━━ ${feed.name || feed.url} ━━━`)
 
     try {
-      const resp = await fetch(feed.url, {
-        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; RSS Fetcher/1.0)', 'Accept': 'application/rss+xml, application/atom+xml, text/xml' },
-        signal: AbortSignal.timeout(20000),
-        redirect: 'follow'
-      })
-
-      if (!resp.ok) {
-        console.error(`  ❌ HTTP ${resp.status}`)
+          // 用 curl 拉取（原生支持代理）
+      let curlCmd = `curl -s -L --max-time 20`
+      if (proxy) curlCmd += ` -x '${proxy}'`
+      curlCmd += ` -H 'User-Agent: Mozilla/5.0 (compatible; RSS Fetcher/1.0)'`
+      curlCmd += ` -H 'Accept: application/rss+xml, application/atom+xml, text/xml'`
+      curlCmd += ` '${feed.url}'`
+      
+      let xml
+      try {
+        xml = execSync(curlCmd, { maxBuffer: 10 * 1024 * 1024 }).toString()
+      } catch (err) {
+        console.error(`  ❌ curl failed: ${err.message.split('\n')[0]}`)
         totalErrors++
         continue
       }
-
-      const xml = await resp.text()
+      
+      if (!xml || xml.length < 100) {
+        console.error(`  ❌ Empty response (${xml?.length || 0} bytes)`)
+        totalErrors++
+        continue
+      }
       let items = parseRSS(xml)
       
       // 按日期过滤（只保留最近 maxDays 天的）

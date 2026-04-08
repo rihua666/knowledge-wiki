@@ -24,14 +24,14 @@
   name: Lilian Weng
   tags: AI, agent, research
 
-- url: https://huggingface.co/blog/feed.xml
-  name: Hugging Face Blog
-  tags: AI, open-source, models
+# - url: https://huggingface.co/blog/feed.xml
+#   name: Hugging Face Blog
+#   tags: AI, open-source, models
 
 # ─── Framework / 工具 ───
-- url: https://blog.langchain.dev/rss.xml
-  name: LangChain Blog
-  tags: AI, framework, agent
+# - url: https://blog.langchain.dev/feed/
+#   name: LangChain Blog
+#   tags: AI, framework, agent
 
 - url: https://mem0.ai/blog/rss.xml
   name: Mem0 Blog
