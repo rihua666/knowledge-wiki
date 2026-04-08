@@ -1,0 +1,26 @@
+{
+  "https://openai.com/blog/rss.xml": [
+    "https://openai.com/index/introducing-openai-safety-fellowship",
+    "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+    "https://openai.com/index/openai-acquires-tbpn",
+    "https://openai.com/index/codex-flexible-pricing-for-teams",
+    "https://openai.com/index/gradient-labs",
+    "https://openai.com/index/accelerating-the-next-phase-ai",
+    "https://openai.com/index/helping-disaster-response-teams-asia",
+    "https://openai.com/index/stadler",
+    "https://openai.com/index/our-approach-to-the-model-spec",
+    "https://openai.com/index/safety-bug-bounty"
+  ],
+  "https://blog.cloudflare.com/rss/": [
+    "https://blog.cloudflare.com/post-quantum-roadmap/",
+    "https://blog.cloudflare.com/organizations-beta/",
+    "https://blog.cloudflare.com/rethinking-cache-ai-humans/",
+    "https://blog.cloudflare.com/1111-privacy-examination-2026/",
+    "https://blog.cloudflare.com/emdash-wordpress/",
+    "https://blog.cloudflare.com/programmable-flow-protection/",
+    "https://blog.cloudflare.com/client-side-security-open-to-everyone/",
+    "https://blog.cloudflare.com/workflow-diagrams/",
+    "https://blog.cloudflare.com/one-line-kubernetes-fix-saved-600-hours-a-year/",
+    "https://blog.cloudflare.com/dynamic-workers/"
+  ]
+}

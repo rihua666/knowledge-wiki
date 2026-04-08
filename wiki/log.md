@@ -13,59 +13,59 @@
 - 初始化 Git 仓库
 
 ## [2026-04-08] ingest | Effective context engineering for AI agents
-- 生成了: [[有效上下文工程 (Effective Context Engineering)]]
+- 生成了: [[有效上下文工程]]
 - 更新了: wiki/index.md
 - 分类: 上下文工程
 - 来源: 2 个文件（英文原文 + 中文翻译）
 
 ## [2026-04-08] ingest | A-Mem: Agentic Memory for LLM Agents
-- 生成了: [[A-Mem: 代理记忆系统]]
+- 生成了: [[A-Mem]]
 - 更新了: wiki/index.md
 - 分类: 记忆系统
 - 来源: 1 个文件（89KB 论文）
 
 ## [2026-04-08] ingest | 动态上下文发现 (Cursor)
-- 生成了: [[动态上下文发现 (Dynamic Context Discovery)]]
+- 生成了: [[动态上下文发现]]
 - 更新了: wiki/index.md
 - 分类: 上下文工程
 - 来源: 1 个文件
 
 ## [2026-04-08] ingest | 量化代理编码评估中的基础设施噪声 (Anthropic)
-- 生成了: [[量化代理编码评估中的基础设施噪声]]
+- 生成了: [[基础设施噪声]]
 - 更新了: wiki/index.md
 - 分类: 评估方法
 - 来源: 1 个文件
 
 ## [2026-04-08] ingest | Harness design for long-running app dev (Anthropic)
-- 生成了: [[Harness design for long-running app dev (长期应用开发的线束设计)]]
+- 生成了: [[Harness-Design]]
 - 更新了: wiki/index.md
 - 分类: AI-Agent
 - 来源: 1 个文件
 
 ## [2026-04-08] ingest | AI Agent Systems: Architectures, Applications, and Evaluation (ASU)
-- 生成了: [[AI Agent Systems: Architectures, Applications, and Evaluation]]
+- 生成了: [[AI-Agent-Systems]]
 - 更新了: wiki/index.md
 - 分类: AI-Agent
 - 来源: 1 个文件（125KB 综述）
 
 ## [2026-04-08] ingest | 项目实践文档（4 篇）
-- 生成了: [[AgentScope Python]], [[AgentScope Java]], [[DeerFlow]], [[Learn Claude Code]]
+- 生成了: [[AgentScope-Python]], [[AgentScope-Java]], [[DeerFlow]], [[Learn-Claude-Code]]
 - 更新了: wiki/index.md
 - 分类: 项目实践
 - 来源: 4 个 Markdown 文档
 
 ## [2026-04-08] ingest | 第二批（3 篇）
-- 生成了: [[Writing effective tools for agents]], [[Welcome to the Era of Experience]], [[Wide Research：超越上下文窗口]]
+- 生成了: [[Writing-Tools]], [[Era-of-Experience]], [[Wide-Research]]
 - 更新了: wiki/index.md
 - 分类: AI-Agent, LLM, 上下文工程
 
 ## [2026-04-08] ingest | 第三批（3 篇）
-- 生成了: [[智能体设计模式]], [[AI代理的上下文工程-Manus经验]], [[OpenAI for Developers in 2025]]
+- 生成了: [[设计模式]], [[Manus-经验]], [[OpenAI-2025]]
 - 更新了: wiki/index.md
 - 分类: AI-Agent, 上下文工程
 
 ## [2026-04-08] ingest | 第四批（3 篇论文，全部素材编译完成）
-- 生成了: [[LLM Agent: A Survey (北大综述)]], [[Survey on Evaluation of LLM-based Agents]], [[Memory in the Age of AI Agents: A Survey]]
+- 生成了: [[LLM-Agent-Survey]], [[Evaluation-Survey]], [[Memory-Survey]]
 - 更新了: wiki/index.md
 - 分类: AI-Agent, 评估方法, 记忆系统
 - ✅ 全部 19 篇素材编译完成

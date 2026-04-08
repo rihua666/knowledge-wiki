@@ -15,7 +15,7 @@ updated: 2026-04-08
 
 ### 人类数据时代的局限
 
-- LLM 通过模仿人类达到了广泛的通用性，但在数学、编程、科学等关键领域接近人类数据的天花板。这预示着 [[Welcome to the Era of Experience]] 所描述的范式转移即将到来。
+- LLM 通过模仿人类达到了广泛的通用性，但在数学、编程、科学等关键领域接近人类数据的天花板。这预示着 [[Era-of-Experience]] 所描述的范式转移即将到来。
 
 - LLM 通过模仿人类达到了广泛的通用性，但在数学、编程、科学等关键领域接近人类数据的天花板
 - 高质量数据源已接近耗尽
@@ -47,9 +47,9 @@ updated: 2026-04-08
 
 ## 与其他主题的关系
 
-- [[A-Mem: 代理记忆系统]] — 持续流中的记忆管理
-- [[有效上下文工程 (Effective Context Engineering)]] — 上下文管理在长时交互中的重要性
-- [[AI Agent Systems: Architectures, Applications, and Evaluation]] — Agent 架构支持经验学习
+- [[A-Mem]] — 持续流中的记忆管理
+- [[有效上下文工程]] — 上下文管理在长时交互中的重要性
+- [[AI-Agent-Systems]] — Agent 架构支持经验学习
 
 ## 来源
 

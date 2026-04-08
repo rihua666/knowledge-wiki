@@ -43,10 +43,10 @@ updated: 2026-04-08
 
 ## 与其他主题的关系
 
-- [[AI Agent Systems: Architectures, Applications, and Evaluation]] — ASU 综述，更侧重架构
-- [[Survey on Evaluation of LLM-based Agents]] — 专注评估维度
-- [[智能体设计模式]] — 设计模式的实践视角
-- [[A-Mem: 代理记忆系统]] — 记忆系统的具体实现
+- [[AI-Agent-Systems]] — ASU 综述，更侧重架构
+- [[Evaluation-Survey]] — 专注评估维度
+- [[设计模式]] — 设计模式的实践视角
+- [[A-Mem]] — 记忆系统的具体实现
 
 ## 来源
 

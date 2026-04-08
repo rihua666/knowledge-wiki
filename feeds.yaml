@@ -1,0 +1,56 @@
+# RSS 订阅源配置
+# 运行: node scripts/rss-fetch.mjs [--dry-run] [--days=30] [--max=20]
+#
+# --days=N    只拉最近 N 天的文章（默认 30，设为 0 拉全部）
+# --max=N     每个源最多拉 N 篇（默认 20）
+# --all       忽略已读记录，重新拉取
+# --dry-run   只显示不保存
+
+# ─── AI 官方博客 ───
+- url: https://openai.com/blog/rss.xml
+  name: OpenAI Blog
+  tags: AI, LLM, agent
+
+- url: https://www.anthropic.com/feed
+  name: Anthropic Blog
+  tags: AI, context-engineering, agent, safety
+
+# ─── 知名研究者 ───
+- url: https://simonwillison.net/atom/feed
+  name: Simon Willison
+  tags: AI, tools, LLM
+
+- url: https://lilianweng.github.io/index.xml
+  name: Lilian Weng
+  tags: AI, agent, research
+
+- url: https://huggingface.co/blog/feed.xml
+  name: Hugging Face Blog
+  tags: AI, open-source, models
+
+# ─── Framework / 工具 ───
+- url: https://blog.langchain.dev/rss.xml
+  name: LangChain Blog
+  tags: AI, framework, agent
+
+- url: https://mem0.ai/blog/rss.xml
+  name: Mem0 Blog
+  tags: AI, memory, agent
+
+# ─── 工程实践 ───
+- url: https://blog.cloudflare.com/rss/
+  name: Cloudflare Blog
+  tags: engineering, infrastructure
+
+# ─── 微信公众号（通过 RSSHub）──
+# 公共实例: https://rsshub.app
+# 自建实例更稳定，格式: /wechat/mp/article/:id
+#
+# ─── X/Twitter（通过 RSSHub）──
+# 格式: /twitter/user/:username
+# 例: https://rsshub.app/twitter/user/karpathy
+
+# ─── 添加你自己的源 ───
+# - url: https://example.com/feed
+#   name: 博客名称
+#   tags: tag1, tag2

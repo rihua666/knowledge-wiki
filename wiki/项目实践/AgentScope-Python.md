@@ -42,9 +42,9 @@ updated: 2026-04-08
 
 ## 与其他主题的关系
 
-- [[AgentScope Java]] — Java 版本的 AgentScope 框架
+- [[AgentScope-Java]] — Java 版本的 AgentScope 框架
 - [[DeerFlow]] — 字节跳动的 super agent harness
-- [[Learn Claude Code]] — Agent Harness 工程学习项目
+- [[Learn-Claude-Code]] — Agent Harness 工程学习项目
 
 ## 来源
 

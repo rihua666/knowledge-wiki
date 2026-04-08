@@ -46,9 +46,9 @@ updated: 2026-04-08
 
 ## 与其他主题的关系
 
-- [[有效上下文工程 (Effective Context Engineering)]] — 工具设计是上下文工程的关键组件
-- [[Harness design for long-running app dev]] — 工具是 Harness 的重要组成部分
-- [[AI Agent Systems: Architectures, Applications, and Evaluation]] — 工具调用是 Agent 架构的核心
+- [[有效上下文工程]] — 工具设计是上下文工程的关键组件
+- [[Harness-Design]] — 工具是 Harness 的重要组成部分
+- [[AI-Agent-Systems]] — 工具调用是 Agent 架构的核心
 - [[DeerFlow]] — Skills 按需加载与工具设计理念一致
 
 ## 来源

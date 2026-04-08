@@ -41,9 +41,9 @@ updated: 2026-04-08
 ## 与其他主题的关系
 
 - [[DeerFlow]] — 实践层面的 super agent harness
-- [[Harness design for long-running app dev]] — Anthropic 的 Harness 设计经验
-- [[有效上下文工程 (Effective Context Engineering)]] — 上下文管理是 Harness 核心
-- [[动态上下文发现 (Dynamic Context Discovery)]] — Cursor 的上下文工程实践
+- [[Harness-Design]] — Anthropic 的 Harness 设计经验
+- [[有效上下文工程]] — 上下文管理是 Harness 核心
+- [[动态上下文发现]] — Cursor 的上下文工程实践
 
 ## 来源
 

@@ -53,10 +53,10 @@ updated: 2026-04-08
 
 ## 与其他主题的关系
 
-- [[A-Mem: 代理记忆系统]] — A-Mem 是本文综述中的一种具体记忆实现方案
-- [[有效上下文工程 (Effective Context Engineering)]] — Anthropic 的结构化笔记是记忆的实践
-- [[AI代理的上下文工程-Manus经验]] — Manus 的文件系统记忆是记忆的另一种实践
-- [[Welcome to the Era of Experience]] — 经验时代的记忆是核心基础设施
+- [[A-Mem]] — A-Mem 是本文综述中的一种具体记忆实现方案
+- [[有效上下文工程]] — Anthropic 的结构化笔记是记忆的实践
+- [[Manus-经验]] — Manus 的文件系统记忆是记忆的另一种实践
+- [[Era-of-Experience]] — 经验时代的记忆是核心基础设施
 
 ## 来源
 

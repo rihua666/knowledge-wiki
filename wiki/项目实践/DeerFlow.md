@@ -42,10 +42,10 @@ updated: 2026-04-08
 
 ## 与其他主题的关系
 
-- [[AgentScope Python]] / [[AgentScope Java]] — Agent 框架（vs DeerFlow 是 harness）
-- [[Learn Claude Code]] — Harness 工程学习
-- [[有效上下文工程 (Effective Context Engineering)]] — Skills 按需加载是动态上下文的实践
-- [[Harness design for long-running app dev]] — Harness 设计方法论
+- [[AgentScope-Python]] / [[AgentScope-Java]] — Agent 框架（vs DeerFlow 是 harness）
+- [[Learn-Claude-Code]] — Harness 工程学习
+- [[有效上下文工程]] — Skills 按需加载是动态上下文的实践
+- [[Harness-Design]] — Harness 设计方法论
 
 ## 来源
 

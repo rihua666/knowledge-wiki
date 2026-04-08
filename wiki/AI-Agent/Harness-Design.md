@@ -21,20 +21,20 @@ updated: 2026-04-08
 ### 两个常见失败模式
 
 1. **上下文焦虑**：模型接近上下文限制时过早结束工作
-   - Compaction（压缩）不够：仍保留旧上下文，焦虑可能持续。详见 [[有效上下文工程 (Effective Context Engineering)]] 中的 Compaction 分析
+   - Compaction（压缩）不够：仍保留旧上下文，焦虑可能持续。详见 [[有效上下文工程]] 中的 Compaction 分析
    - **Context Reset（重置）**更好：清空上下文，用结构化工件传递状态
 
 2. **自我评价偏差**：Agent 评价自己作品时过于宽容
    - 即使有可验证结果的任务也存在判断力差的问题
-   - 解决：**将生成者与评估者分离**。评估方法论见 [[Survey on Evaluation of LLM-based Agents]]
+   - 解决：**将生成者与评估者分离**。评估方法论见 [[Evaluation-Survey]]
 
 ### 三代理架构
 
 受 GAN 启发，设计 Planner-Generator-Evaluator 架构：
 
-- **Planner**：将产品规格分解为任务列表（类似 [[智能体设计模式]] 中的 Prompt Chaining）
+- **Planner**：将产品规格分解为任务列表（类似 [[设计模式]] 中的 Prompt Chaining）
 - **Generator**：实现任务，构建应用
-- **Evaluator**：根据评分标准评估输出，提供反馈（工具评估方法见 [[Writing effective tools for agents]]）
+- **Evaluator**：根据评分标准评估输出，提供反馈（工具评估方法见 [[Writing-Tools]]）
 
 ### 前端设计的四项评分标准
 
@@ -61,10 +61,10 @@ updated: 2026-04-08
 
 ## 与其他主题的关系
 
-- [[有效上下文工程 (Effective Context Engineering)]] — Context Reset vs Compaction 的对比
-- [[量化代理编码评估中的基础设施噪声]] — Harness 是评估基础设施的一部分
-- [[Writing effective tools for agents]] — 工具设计也是 Harness 的关键组件
-- [[智能体设计模式]] — 更广泛的 Agent 架构模式
+- [[有效上下文工程]] — Context Reset vs Compaction 的对比
+- [[基础设施噪声]] — Harness 是评估基础设施的一部分
+- [[Writing-Tools]] — 工具设计也是 Harness 的关键组件
+- [[设计模式]] — 更广泛的 Agent 架构模式
 
 ## 来源
 

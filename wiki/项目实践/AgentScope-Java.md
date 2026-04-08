@@ -35,9 +35,9 @@ updated: 2026-04-08
 
 ## 与其他主题的关系
 
-- [[AgentScope Python]] — Python 版本，功能更丰富
+- [[AgentScope-Python]] — Python 版本，功能更丰富
 - [[DeerFlow]] — 字节跳动的 super agent harness
-- [[智能体设计模式]] — Agent 架构设计模式
+- [[设计模式]] — Agent 架构设计模式
 
 ## 来源
 

@@ -51,9 +51,9 @@ updated: 2026-04-08
 
 ## 与其他主题的关系
 
-- [[量化代理编码评估中的基础设施噪声]] — 基础设施配置对评估的影响
-- [[AI Agent Systems: Architectures, Applications, and Evaluation]] — ASU 综述中的评估章节
-- [[Writing effective tools for agents]] — 工具评估的方法论
+- [[基础设施噪声]] — 基础设施配置对评估的影响
+- [[AI-Agent-Systems]] — ASU 综述中的评估章节
+- [[Writing-Tools]] — 工具评估的方法论
 
 ## 来源
 

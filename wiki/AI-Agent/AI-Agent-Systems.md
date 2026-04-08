@@ -75,11 +75,11 @@ updated: 2026-04-08
 
 ## 与其他主题的关系
 
-- [[有效上下文工程 (Effective Context Engineering)]] — 上下文管理是 Agent 的核心挑战
-- [[A-Mem: 代理记忆系统]] — 记忆子系统 M 的具体实现
-- [[智能体设计模式]] — 编排模式的具体实践
-- [[Harness design for long-running app dev]] — Harness 设计影响 Agent 架构选择
-- [[量化代理编码评估中的基础设施噪声]] — 评估可复现性的具体案例
+- [[有效上下文工程]] — 上下文管理是 Agent 的核心挑战
+- [[A-Mem]] — 记忆子系统 M 的具体实现
+- [[设计模式]] — 编排模式的具体实践
+- [[Harness-Design]] — Harness 设计影响 Agent 架构选择
+- [[基础设施噪声]] — 评估可复现性的具体案例
 
 ## 来源
 

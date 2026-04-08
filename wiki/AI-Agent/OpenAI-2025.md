@@ -43,10 +43,10 @@ updated: 2026-04-08
 
 ## 与其他主题的关系
 
-- [[Writing effective tools for agents]] — Anthropic 的工具设计 vs OpenAI 的工具生态
-- [[AgentScope Python]] — 支持多种模型的 Agent 框架
+- [[Writing-Tools]] — Anthropic 的工具设计 vs OpenAI 的工具生态
+- [[AgentScope-Python]] — 支持多种模型的 Agent 框架
 - [[DeerFlow]] — 另一个 Agent Harness 实现
-- [[Learn Claude Code]] — Anthropic 的 Harness 教育项目
+- [[Learn-Claude-Code]] — Anthropic 的 Harness 教育项目
 
 ## 来源
 

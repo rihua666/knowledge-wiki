@@ -23,7 +23,7 @@ A = (π_θ, M, T, V, E)
 
 执行循环：观察环境 → 检索记忆 → 提议动作 → 验证 → 执行工具 → 更新
 
-→ 详见 [[AI Agent Systems: Architectures, Applications, and Evaluation]]
+→ 详见 [[AI-Agent-Systems]]
 
 ### 关键设计权衡
 
@@ -44,7 +44,7 @@ Harness 是 Agent 的"工作环境"——提供工具、知识、上下文管理
 - 解决自我评价偏差（生成者与评估者分离）
 - 关键：评估标准将主观判断转化为可评分术语
 
-→ 详见 [[Harness design for long-running app dev (长期应用开发的线束设计)]]
+→ 详见 [[Harness-Design]]
 
 ### 工具设计
 
@@ -55,7 +55,7 @@ Harness 是 Agent 的"工作环境"——提供工具、知识、上下文管理
 - Token 效率优化
 - 用 Agent 自动优化工具
 
-→ 详见 [[Writing effective tools for agents]]
+→ 详见 [[Writing-Tools]]
 
 ## Agent 分级与设计模式
 
@@ -66,7 +66,7 @@ Harness 是 Agent 的"工作环境"——提供工具、知识、上下文管理
 
 核心模式：Prompt Chaining、Routing、上下文工程
 
-→ 详见 [[智能体设计模式]]
+→ 详见 [[设计模式]]
 
 ## 工具与标准生态
 
@@ -76,20 +76,20 @@ Harness 是 Agent 的"工作环境"——提供工具、知识、上下文管理
 - **Agent SDK** — OpenAI 的 Agent 开发工具链
 - **Apps SDK** — 基于 MCP 的 UI 开发框架
 
-→ 详见 [[OpenAI for Developers in 2025]]
+→ 详见 [[OpenAI-2025]]
 
 ## 细节文章
 
-- [[AI Agent Systems: Architectures, Applications, and Evaluation]] — ASU 架构综述
-- [[Harness design for long-running app dev (长期应用开发的线束设计)]] — Anthropic Harness 设计
-- [[Writing effective tools for agents]] — Anthropic 工具设计
-- [[智能体设计模式]] — Gullí & Song 设计模式体系
-- [[LLM Agent: A Survey (北大综述)]] — 北大方法论综述
-- [[OpenAI for Developers in 2025]] — OpenAI 生态全景
+- [[AI-Agent-Systems]] — ASU 架构综述
+- [[Harness-Design]] — Anthropic Harness 设计
+- [[Writing-Tools]] — Anthropic 工具设计
+- [[设计模式]] — Gullí & Song 设计模式体系
+- [[LLM-Agent-Survey]] — 北大方法论综述
+- [[OpenAI-2025]] — OpenAI 生态全景
 
 ## 交叉引用
 
 - [[上下文工程]] — 上下文管理是 Harness 的核心
 - [[记忆系统]] — 记忆子系统 M 的实现
 - [[评估方法]] — Agent 评估的挑战和方法
-- [[项目实践]] — Agent 框架和 Harness 的具体实现
+- 项目实践 — Agent 框架和 Harness 的具体实现
