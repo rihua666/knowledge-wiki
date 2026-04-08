@@ -53,3 +53,19 @@
 - 更新了: wiki/index.md
 - 分类: 项目实践
 - 来源: 4 个 Markdown 文档
+
+## [2026-04-08] ingest | 第二批（3 篇）
+- 生成了: [[Writing effective tools for agents]], [[Welcome to the Era of Experience]], [[Wide Research：超越上下文窗口]]
+- 更新了: wiki/index.md
+- 分类: AI-Agent, LLM, 上下文工程
+
+## [2026-04-08] ingest | 第三批（3 篇）
+- 生成了: [[智能体设计模式]], [[AI代理的上下文工程-Manus经验]], [[OpenAI for Developers in 2025]]
+- 更新了: wiki/index.md
+- 分类: AI-Agent, 上下文工程
+
+## [2026-04-08] ingest | 第四批（3 篇论文，全部素材编译完成）
+- 生成了: [[LLM Agent: A Survey (北大综述)]], [[Survey on Evaluation of LLM-based Agents]], [[Memory in the Age of AI Agents: A Survey]]
+- 更新了: wiki/index.md
+- 分类: AI-Agent, 评估方法, 记忆系统
+- ✅ 全部 19 篇素材编译完成
