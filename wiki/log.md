@@ -69,3 +69,36 @@
 - 更新了: wiki/index.md
 - 分类: AI-Agent, 评估方法, 记忆系统
 - ✅ 全部 19 篇素材编译完成
+
+## [2026-05-07] ingest | SWE-CI 长期可维护性评估基准 + 宝玉视频转博客
+- 生成了: [[SWE-CI]]
+- 更新了: wiki/index.md, [[🏠评估方法]]
+- 分类: 评估方法
+- 来源: arXiv:2603.03823 (中山大学 + 阿里巴巴)
+- 新增 raw 素材: 2026-05-06-博客-宝玉AI-视频变图文博客-Agent-豆包Seed2.0-lite.md
+
+## [2026-04-22] update | 置信度标注系统 + Hot Cache
+
+### 变更内容
+
+**SCHEMA.md 新增：**
+- 置信度标注系统（§ 🎯 置信度标注系统）
+  - Frontmatter `confidence` 字段：high / medium / low / mixed
+  - 行内标注：`[原文]` / `[推断]` / `[推测]` / `[待验证]`
+  - Hub 页面特殊规则
+- Lint 检查新增：置信度审计
+
+**SKILL.md (llm-wiki) 新增：**
+- Confidence Annotation 段落（frontmatter + 行内标注规则）
+- Resuming 逻辑升级：hot cache 快速路径
+- Lint ⑨ 新增置信度审计
+
+**新文件：**
+- `wiki/hot.md` — 会话快照缓存（~500 词），每次操作后更新
+
+**技能更新：**
+- `openclaw-wiki-compile`：增加 confidence 字段模板 + hot cache 更新步骤
+
+### 审计结果
+- 现有 51 个 wiki 页面均缺 confidence 字段（待下次批量回填）
+- 0 个行内标注（新文章编译时自动生成）

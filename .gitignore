@@ -3,15 +3,25 @@
 Thumbs.db
 
 # Obsidian
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/cache
+.obsidian/
 
 # IDE
 .idea/
 .vscode/
 
-# 临时文件
+# Runtime & state
+.openclaw/
+.rss-state.json
 *.tmp
 *.bak
 *.swp
+
+# Personal / private
+memory/
+temp_pdf_text/
+claude-obsidian/
+
+# Credentials
+.env
+*.key
+*.pem

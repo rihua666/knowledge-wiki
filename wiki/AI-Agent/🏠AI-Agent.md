@@ -4,7 +4,7 @@ title: AI-Agent
 category: AI-Agent
 tags: agent, architecture, harness, multi-agent, tool-use, design-patterns
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-05-07
 ---
 
 # AI-Agent
@@ -79,14 +79,50 @@ Harness 是 Agent 的"工作环境"——提供工具、知识、上下文管理
 
 → 详见 [[OpenAI-2025]]
 
+## Agent 范式（五种控制模式）
+
+> 来源: [[你所不知道的Agent]]
+
+| 范式 | 控制权 | 适合场景 |
+|------|--------|--------|
+| Prompt Chaining | 代码固定 | 线性流程 |
+| Routing | 代码分类 | 多类型分流 |
+| Parallelization | 代码编排 | 并发子任务 |
+| Orchestrator-Workers | LLM 动态 | 编码/研究 |
+| Evaluator-Optimizer | LLM 迭代 | 质量优化 |
+
+**Workflow vs Agent**：路径由代码预定 = Workflow，由 LLM 动态决定 = Agent。关键不是哪个更好，而是任务适合哪种。
+
+## Managed Agents（新）
+
+Anthropic Claude Platform 的生产级 Agent 服务架构：
+- **解耦设计**：Session / Harness / Sandbox 三组件独立替换
+- **从 Pet 到 Cattle**：无状态 harness + 按需 sandbox
+- **安全边界**：凭证永远不在 sandbox 可达范围
+- **性能**：p50 TTFT ↓60%, p95 TTFT ↓90%
+
+→ 详见 [[ScalingManagedAgents]]
+
 ## 细节文章
 
+- [[你所不知道的Agent]] — Agent 范式、Harness、上下文工程、工具设计全景
+- [[ScalingManagedAgents]] — Anthropic Managed Agents 架构
 - [[AI-Agent-Systems]] — ASU 架构综述
 - [[Harness-Design]] — Anthropic Harness 设计
 - [[Writing-Tools]] — Anthropic 工具设计
 - [[设计模式]] — Gullí & Song 设计模式体系
 - [[LLM-Agent-Survey]] — 北大方法论综述
 - [[OpenAI-2025]] — OpenAI 生态全景
+- [[多智能体协作模式]] — 五种主流多智能体协作模式 ⭐新
+- [[Agent-CLI设计原则]] — 面向 Agent 的 CLI 十条设计原则 ⭐新
+- [[Skill-Memory工程实践]] — fireworks-skill-memory 开源 Harness 记忆工程 ⭐新
+- [[AI落地与软件工厂]] — AI 落地核心命题与 L8 软件工厂 ⭐新
+- [[Agent-Harness驯化范式]] — Agent Harness 驯化范式与硅谷新共识 ⭐新
+- [[Agent-Harness十二组件]] — 生产级 Harness 的 12 组件与 7 大架构决策 ⭐新
+- [[规范驱动开发]] — Spec-Driven Development：规范作为第一性产物的元方法论 ⭐新
+- [[MCP实践指南]] — Anthropic MCP 三大优化解法与三层定位 ⭐新
+- [[Claude-Code质量Postmortem]] — Anthropic 官方复盘 Claude Code 三重质量退化 ⭐新
+- [[Agent-Harness参考项目]] — 从 Harness 本质出发的 50+ 开源项目全景（按领域分类） ⭐新
 
 ## 交叉引用
 
